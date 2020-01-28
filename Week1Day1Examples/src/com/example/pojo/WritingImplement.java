@@ -31,10 +31,10 @@ public class WritingImplement {
 
 	}
 
-	public WritingImplement() {
-		//System.out.println("no-arg constructor of WritingImplement");
-		this(0, "normal", "paper");
-		System.out.println("no-arg constructor of WritingImplement");
-	}
+//	public WritingImplement() {
+//		//System.out.println("no-arg constructor of WritingImplement");
+//		this(0, "normal", "paper");
+//		System.out.println("no-arg constructor of WritingImplement");
+//	}
 
 }
