@@ -20,17 +20,17 @@ public class WritingImplement {
 
 	}
 
-	public WritingImplement(int size, String shape, String medium) {
-		// first line always super() or this()
-		// by default it is super()
-		super();
-		System.out.println("Three args constructor of WritingImplement");
-		this.size = size;
-		this.shape = shape;
-		this.medium = medium;
-
-	}
-
+//	public WritingImplement(int size, String shape, String medium) {
+//		// first line always super() or this()
+//		// by default it is super()
+//		super();
+//		System.out.println("Three args constructor of WritingImplement");
+//		this.size = size;
+//		this.shape = shape;
+//		this.medium = medium;
+//
+//	}
+//
 //	public WritingImplement() {
 //		//System.out.println("no-arg constructor of WritingImplement");
 //		this(0, "normal", "paper");
