@@ -9,5 +9,5 @@ public class InheritenceExample {
 		com.example.pojo.Pen pen = new com.example.pojo.Pen();
 		pen.write();
 	}
-
+//comment
 }
