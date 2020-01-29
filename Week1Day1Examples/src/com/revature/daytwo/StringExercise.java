@@ -8,13 +8,14 @@ public class StringExercise {
 	public StringExercise()
 	{
 		/*
-		static String 	join(CharSequence delimiter, CharSequence... elements)
-		Returns a new String composed of copies of the CharSequence elements joined together with a copy of the specified delimiter.
+		Returns a new String composed of copies of the CharSequence elements joined together
+		with a copy of the specified delimiter.
 		*/
 		
 		//list of strings
 		List<String> strings = new LinkedList<>();
-	     strings.add("Revature");strings.add("is");
+	     strings.add("Revature");
+	     strings.add("is");
 	     strings.add("cool");
 		
 	     //join the list using delimiter "-" into a single string
@@ -39,7 +40,8 @@ public class StringExercise {
 			e.printStackTrace();
 		}
 		
-		//Returns the index within this string of the last occurrence of the specified character, searching backward starting at the specified index.
+		//Returns the index within this string of the last occurrence of the specified character
+		//searching backward starting at the specified index.
 		//if not found, returns -1
 		//case sensitive
 		int fromIndex = s.lastIndexOf('e', 6);
