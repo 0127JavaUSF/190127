@@ -12,14 +12,13 @@ public class StringPractice{
 		String string2 = new String("hello world.");
 
 		
-		//perform String comparison tests
+		// perform String comparison tests
 		System.out.println(string1.equals(string2));
 		System.out.println(string1.equalsIgnoreCase(string2));
 		
+	
 		
-		
-		
-		//Does not throw an error
+		// Does not throw an error
 		try {
 			String string3 = String.format("%x", 124); // Hexidecimal value
 			System.out.println(string3);
@@ -28,7 +27,7 @@ public class StringPractice{
 			exc.printStackTrace();
 		}
 		
-		//Throws an error
+		// Throws an error
 		try {
 			String string3 = String.format("%x", "string"); // Hexidecimal value
 			System.out.println(string3);
