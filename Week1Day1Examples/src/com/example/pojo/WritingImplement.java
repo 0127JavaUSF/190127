@@ -2,11 +2,49 @@ package com.example.pojo;
 
 public class WritingImplement {
 
-	int size;
+	private int size;
 
-	String shape;
+	private String shape;
 
-	String medium;
+	private String medium;
+
+	private boolean erasable;
+
+	public boolean isErasable() {
+		return this.erasable;
+	}
+
+	public void setErasable(boolean erasable) {
+		this.erasable = erasable;
+	}
+
+	public int getSize() {
+		return this.size;
+	}
+
+	public void setSize(int size) {
+		if (size > 0) {
+			this.size = size;
+		} else {
+			throw new IllegalArgumentException();
+		}
+	}
+
+	public String getShape() {
+		return this.shape;
+	}
+
+	public void setShape(String shape) {
+		this.shape = shape;
+	}
+
+	public String getMedium() {
+		return this.medium;
+	}
+
+	public void setMedium(String medium) {
+		this.medium = medium;
+	}
 
 	public void write() {
 		// String medium = "paper";
@@ -32,7 +70,7 @@ public class WritingImplement {
 	}
 
 	public WritingImplement() {
-		//System.out.println("no-arg constructor of WritingImplement");
+		// System.out.println("no-arg constructor of WritingImplement");
 		this(0, "normal", "paper");
 		System.out.println("no-arg constructor of WritingImplement");
 	}
