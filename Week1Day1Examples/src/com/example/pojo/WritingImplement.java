@@ -25,7 +25,7 @@ public class WritingImplement {
 //		// by default it is super()
 //		super();
 //		System.out.println("Three args constructor of WritingImplement");
-//		this.size = size;
+//		this.size = size;S
 //		this.shape = shape;
 //		this.medium = medium;
 //
