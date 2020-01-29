@@ -14,9 +14,9 @@ public class Overloading {
 		//Double, Short, Float, Long, Integer, Char, Boolean, Byte
 		Integer integer = new Integer(7);
 		//auto-unboxing: take a wrapper class and turn it into a primative type automatically
-		add(6, integer);
+		add(6, 9);
 		//auto-boxing: take a primative and wrap it into the wrapper class automatically when Java expects a Class
-		takeInteger(5);
+		int d = takeInteger(5);
 	}
 	
 	public static int takeInteger(Integer i) {
