@@ -9,6 +9,7 @@ public class GarbageCollectionExample {
 		 * if System.gc() doesn't return anything, how are we incrementing 
 		 * whether or not it triggered the garbage collection, or if garbage collection 
 		 * occured automatically???
+		 * 
 		 */
 		// TODO Auto-generated method stub
 
@@ -21,7 +22,7 @@ public class GarbageCollectionExample {
 		}
 
 
-	}//notice the inconsistency in when object is actually removed from the heap via garbage collection per System.gc() request
+	}//notice the inconsistency in when object is actually removed from the heap via garbage collection
 	
 }
 
