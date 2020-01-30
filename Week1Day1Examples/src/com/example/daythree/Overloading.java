@@ -10,12 +10,12 @@ public class Overloading {
 		
 		System.out.println(add(3, "number?", 4, 5, 2, 4, 6, 3, 4334, 64, 234, 6543, 234, 65432, 65243, 32452, 652354, 2345, 42354, 6532));
 		
-		//Wrapper Classes - Class used to wrap primative values
+		//Wrapper Classes - Class used to wrap primitive values
 		//Double, Short, Float, Long, Integer, Char, Boolean, Byte
-		Integer integer = new Integer(7);
-		//auto-unboxing: take a wrapper class and turn it into a primative type automatically
-		add(6, integer);
-		//auto-boxing: take a primative and wrap it into the wrapper class automatically when Java expects a Class
+		Integer integer = 7;
+		//auto-unboxing: take a wrapper class and turn it into a primitive type automatically
+		add(6.0, integer);
+		//auto-boxing: take a primitive and wrap it into the wrapper class automatically when Java expects a Class
 		takeInteger(5);
 	}
 	
