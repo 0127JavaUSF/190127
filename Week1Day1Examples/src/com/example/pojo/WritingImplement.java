@@ -7,6 +7,7 @@ public class WritingImplement {
 	private String shape;
 
 	private String medium;
+<<<<<<< HEAD
 
 	private boolean erasable;
 
@@ -45,7 +46,18 @@ public class WritingImplement {
 	public void setMedium(String medium) {
 		this.medium = medium;
 	}
+=======
+>>>>>>> 6927189331937aa1f661744c7bb7d36ddf55eaba
 
+	public int getSize() {
+		return this.size;
+	}
+	
+	public void setSize(int size) {
+		this.size = size;
+	}
+	
+	
 	public void write() {
 		// String medium = "paper";
 		System.out.println("Writing on " + this.medium);
