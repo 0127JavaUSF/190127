@@ -17,6 +17,8 @@ public class Overloading {
 		add(6, integer);
 		//auto-boxing: take a primitive and wrap it into the wrapper class automatically when Java expects a Class
 		takeInteger(5);
+		
+		add(1, 2);
 	}
 	
 
