@@ -4,8 +4,18 @@ public class CalculatorImpl <T extends Number> implements Calculator<T> {
 
 	@Override
 	public T add(T a, T b) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		Number result = a.doubleValue() + b.doubleValue();
+		
+		if (a instanceof Double) {
+			return (T) result;
+		}
+		
+		result = Math.floor(result.doubleValue());
+		
+		result = result.intValue();
+		
+		return (T)  result;
 	}
 
 	@Override
