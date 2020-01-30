@@ -2,12 +2,21 @@ package com.example.pojo;
 
 public class WritingImplement {
 
-	int size;
+	private int size;
 
-	String shape;
+	private String shape;
 
-	String medium;
+	private String medium;
 
+	public int getSize() {
+		return this.size;
+	}
+	
+	public void setSize(int size) {
+		this.size = size;
+	}
+	
+	
 	public void write() {
 		// String medium = "paper";
 		System.out.println("Writing on " + this.medium);
