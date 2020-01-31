@@ -1,6 +1,8 @@
 package com.revature.test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
+import static org.mockito.Mockito.when;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -44,8 +46,23 @@ public class LoanServiceTest {
 	}
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void simpleMonthlyCalculatePaymentAmount() {
+		loan.setInterest(0.05);
+		loan.setInterestType(Loan.InterestType.SIMPLE);
+		loan.setLength(3);
+		loan.setPrinciple(1000);
+		loan.setPeriod(Loan.Period.MONTHLY);
+		
+		when(calc.mult(0.05, 3.0)).thenReturn(0.15);
+		when(calc.add(1.0, 0.15)).thenReturn(1.15);
+		when(calc.mult(1000.0, 1.15)).thenReturn(1150.0);
+		when(calc.mult(3.0, 12.0)).thenReturn(36.0);
+		when(calc.div(1150.0, 36.0)).thenReturn(31.94);
+		
+		loanService.setCalculator(calc);
+		
+		assertEquals("Payments should equal 31.94", new Double(31.94), loanService.calculatePaymentAmount(loan));
+		
 	}
 
 }
