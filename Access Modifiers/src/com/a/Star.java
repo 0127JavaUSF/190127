@@ -77,3 +77,79 @@ public class Star {
 		System.out.println(starD.d);// private breaks because package d Class Star variable 'd' has a private access modifier.
 	}
 }
+
+
+class Circle extends com.a.Square {
+	
+	public static int a;
+	protected static int b;
+	static int c;
+	private static int d;
+	
+	//package a
+
+
+	static com.a.Star starA = new com.a.Star();
+	//package b
+	static com.b.Circle cirB = new com.b.Circle();
+	//package c
+	static com.c.Star starC = new com.c.Star();
+	static Triangle traingleC = new Triangle();
+	//package d
+	static com.d.Star starD = new com.d.Star();
+	
+	public void SquareA() {
+		System.out.println(com.a.Square.a);// public
+		System.out.println(com.a.Square.b);// protected
+		System.out.println(com.a.Square.c);// default
+		System.out.println(com.a.Square.d);// private breaks because package a Class Square variable 'd' has a private access modifier
+	}
+	
+	public void CircleA() {
+		System.out.println(com.a.Circle.a);// public
+		System.out.println(com.a.Circle.b);// protected
+		System.out.println(com.a.Circle.c);// default
+		System.out.println(com.a.Circle.d);// private 
+	}
+	public void StarA() {
+		System.out.println(com.a.Star.a);// public
+		System.out.println(com.a.Star.b);// protected
+		System.out.println(com.a.Star.c);// default 
+		System.out.println(com.a.Star.d);// private breaks because package a Class Star variable 'd' has a private access modifier.
+	}
+	public void CircleB() {
+		System.out.println(com.b.Circle.a);// public
+		System.out.println(com.b.Circle.b);// protected breaks because package b Class Circle variable 'b' is not a subclass
+		System.out.println(com.b.Circle.c);// default breaks because package b Class Circle variable 'c' is not in the same package
+		System.out.println(com.b.Circle.d);// private breaks because package b Class Circle variable 'd' has a private access modifier.
+	}
+	public void StarC() {// can't be seen at all because Class Star in package c has a default access modifier.
+		
+		System.out.println(com.c.Star.a);// public breaks because the Class Star in package c itself has an access modifier of default
+		System.out.println(com.c.Star.b);// protected breaks because package c Class Star variable 'b' is not a subclass
+		System.out.println(com.c.Star.c);// default breaks because package c Class Star variable 'c' is not in the same package
+		System.out.println(com.c.Star.d);// private breaks because package c Class Star variable 'd' has a private access modifier.
+	}
+	  public void TriangleC() { 
+		  System.out.println(com.c.Triangle.a);// public
+		  System.out.println(com.c.Triangle.b);// protected breaks because package c Class Triangle variable 'b' is not a subclass 
+		  System.out.println(com.c.Triangle.c);// default breaks because package c Class Triangle variable 'c' is not in the same package 
+		  System.out.println(com.c.Triangle.d);// private breaks because package c Class Triangle variable 'd' has a private access modifier. 
+	  }
+	public void StarD() {
+		System.out.println(com.d.Star.a);// public
+		System.out.println(com.d.Star.b);// protected breaks because package d Class Star variable 'b' is not a subclass
+		System.out.println(com.d.Star.c);// default breaks because package d Class Star variable 'c' is not in the same package
+		System.out.println(com.d.Star.d);// private breaks because package d Class Star variable 'd' has a private access modifier.
+	}
+	
+	
+	
+	
+	
+
+	
+	
+	
+}
+

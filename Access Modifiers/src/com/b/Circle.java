@@ -61,7 +61,7 @@ public class Circle extends com.a.Star{
 	}
 	  public void TriangleC() { 
 		  System.out.println(traingleC.a);// public
-		  System.out.println(traingleC.b);// protected breaks because package c Class Triangle variable 'b' is not a subclass 
+		  System.out.println(traingleC.b);// protected breaks because outside of package isn't in this class, and is not a child of this 
 		  System.out.println(traingleC.c);//default breaks because package c Class Triangle variable 'c' is not in the same package 
 		  System.out.println(traingleC.d);// private breaks because package c Class Triangle variable 'd' has a private access modifier. 
 	  }
